@@ -9,10 +9,8 @@ main{
     background-color: #BE0909;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
-    
-
 }
 .yellow-section{
     background-color: #FFB039;
@@ -38,6 +36,7 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-top: 64px;
     
 }
 input,textarea{
@@ -136,6 +135,7 @@ textarea{
     color: #FFFFFF;
     border: none;
     align-self: center;
+    
 }
 .form-group{
     display: flex;
