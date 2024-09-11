@@ -33,7 +33,9 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
+    margin-left: 40px;
+    padding-left: 25px;
 }
 input,textarea{
     color: #FDFFFF;
@@ -56,7 +58,7 @@ input::placeholder,textarea::placeholder{
 }
 textarea{
     padding-top: 20px;
-    transition: all 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out, max-height 0.3s ease-in-out;
 }
 
 .label{
@@ -184,7 +186,7 @@ input:focus,textarea:focus{
 
 #full-name:valid,#email:valid,#message-regarding:valid,#message:valid{
     border-color: transparent;
-    outline: 4px solid #99AA38;
+    outline: 6px solid #99AA38;
     outline-offset: 2px;
     border-radius: 4px;
 }
