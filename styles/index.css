@@ -8,4 +8,106 @@ main{
     width: 100%;
     background: linear-gradient(to right, #BE0909 65%, #FFB039 35%);
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    
+}
+input{
+    color: #FDFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.3em;
+}
+input::placeholder{
+   
+    color: #FDFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.3em;
+
+}
+
+.label{
+    color: #FEFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+   
+    
+
+
+}
+#full-name{
+    width: 100%;
+    max-width: 400px;
+    height: 72px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9DBEBB;
+    
+}
+#email{
+    width: 160px;
+    height: 72px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9DBEBB;
+
+}
+#message-regarding{
+    width: 213px;
+    height: 72px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9DBEBB;
+}
+#message{
+    width: 400;
+    height: 72px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9DBEBB;
+}
+.form-button{
+    margin-top: 56px;
+    width: 202px;
+    height: 48px;
+    background: #468189;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    align-self: center;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
 }

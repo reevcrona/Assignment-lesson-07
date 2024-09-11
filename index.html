@@ -5,20 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <main>
-        <form action="">
-            <label for="full-name">FULL NAME</label>
-            <input type="text" name="full-name" id="full-name">
-            <label for="">EMAIL</label>
-            <input type="email" name="email" id="email">
-            <label for="message-regarding"></label>
-            <input type="text" name="message-regarding" id="message-regarding">
-            <label for="message"></label>
-            <input type="text" name="message" id="message">
-        </form>
+        <main>
+            <form class="form" action="">
+                <div class="form-group">
+                    <label for="full-name" class="label full-name-label">Full name</label>
+                    <input type="text" name="full-name" id="full-name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="label email-label">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message-regarding" class="label regarding-label">MESSAGE REGARDING</label>
+                    <input type="text" name="message-regarding" id="message-regarding">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="label message-label">MESSAGE</label>
+                    <input type="text" name="message" id="message" placeholder="Your Message">
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="form-button">Send Message</button>
+                </div>
+            </form>
     </main>
 </body>
 </html>
