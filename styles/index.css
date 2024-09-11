@@ -6,17 +6,32 @@ body{
 }
 main{
     width: 100%;
-    background: linear-gradient(to right, #BE0909 65%, #FFB039 35%);
+    background-color: #BE0909;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+.duck-image{
+    position: absolute;
+    width: 663px;
+    height: 603px;
+    bottom: -50px;
+    right: 300px;
+}
+.yellow-section{
+    background-color: #FFB039;
+    width: 35%;
+    height: 100vh;
 }
 
 .form{
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     
     
 }
