@@ -3,6 +3,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     height: 100vh;
+    overflow: hidden;
 }
 main{
     width: 100%;
@@ -10,7 +11,7 @@ main{
     height: 100vh;
     display: flex;
     align-items:center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .yellow-section{
     background-color: #FFB039;
@@ -25,19 +26,17 @@ main{
     max-width: 663px;
     height: 603px;
     bottom:0;
-    right: 300px;
-    
+    right: 100px;
 }
 
 
 .form{
-    width: 35%;
+    width: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 64px;
-    
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-left: 40px;
 }
 input,textarea{
     color: #FDFFFF;
@@ -82,7 +81,6 @@ textarea{
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #9DBEBB;
-    
 }
 #email{
     width: 100%;
@@ -118,7 +116,7 @@ textarea{
     border-bottom: 1px solid #9DBEBB;
 }
 .form-button{
-    margin-top: 56px;
+    margin-top: 20px;
     width: 202px;
     height: 48px;
     background: #468189;
@@ -141,7 +139,6 @@ textarea{
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 400px;
     max-width: 400px;
     
 }
@@ -175,8 +172,8 @@ textarea{
 }
 
 #message:focus{
-    height: 120px;
-    max-height: 120px;
+    height: 100px;
+    max-height: 100px;
 }
 
 
