@@ -17,8 +17,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100%;
-    max-width: 400px;
+    
     
 }
 input{
@@ -29,6 +28,7 @@ input{
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.3em;
+    padding: 0 0 0 10px;
 }
 input::placeholder{
    
@@ -59,30 +59,43 @@ input::placeholder{
 #full-name{
     width: 100%;
     max-width: 400px;
-    height: 72px;
+    height: 100%;
+    min-height: 51px;
+    max-height: 51px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #9DBEBB;
     
 }
 #email{
-    width: 160px;
-    height: 72px;
+    width: 100%;
+    max-width: 160px;
+    height: 100%;
+    min-height: 51px;
+    max-height: 51px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #9DBEBB;
+    transition: max-width 0.3s ease-in-out;
 
 }
 #message-regarding{
-    width: 213px;
-    height: 72px;
+    width: 100%;
+    max-width: 213px;
+    min-height: 51px;
+    max-height: 51px;
+    height: 100%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #9DBEBB;
+    transition: max-width 0.3s ease-in-out;
 }
 #message{
-    width: 400;
-    height: 72px;
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    min-height: 51px;
+    max-height: 51px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #9DBEBB;
@@ -94,7 +107,6 @@ input::placeholder{
     background: #468189;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
     border-radius: 40px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -110,4 +122,28 @@ input::placeholder{
 .form-group{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-width: 400px;
+    max-width: 400px;
+    
+}
+.email-label{
+    margin-top: 22px;
+}
+.regarding-label{
+    margin-top: 31px;
+}
+.message-label{
+    margin-top: 22px;
+}
+
+#email:focus,#message-regarding:focus{
+    max-width: 400px;
+}
+
+#email:not(:placeholder-shown){
+    max-width: 400px;
+}
+#message-regarding:valid{
+    max-width: 400px;
 }
