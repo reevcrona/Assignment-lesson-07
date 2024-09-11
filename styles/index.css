@@ -22,6 +22,7 @@ main{
 .duck-image{
     position: absolute;
     width: 663px;
+    max-width: 663px;
     height: 603px;
     bottom:0;
     right: 300px;
@@ -30,12 +31,12 @@ main{
 
 .form{
     width: 65%;
+    max-height: 446px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
-    margin-left: 40px;
-    padding-left: 25px;
+    align-items: center;
+    
 }
 input,textarea{
     color: #FDFFFF;
